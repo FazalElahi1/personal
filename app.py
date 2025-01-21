@@ -166,7 +166,7 @@ def projects():
         cols = st.columns(3)
 
         with cols[0]:
-            st.image(project_data[0]["image"], use_column_width=True, caption="Airline Passenger Sales Analysis")
+            st.image(project_data[0]["image"], width=300, caption="Airline Passenger Sales Analysis")
             st.subheader(project_data[0]["title"])
             st.write(project_data[0]["description"])
             if st.button("View Details", key="view_0"):
@@ -174,7 +174,7 @@ def projects():
 
         # Second project in the second column
         with cols[1]:
-            st.image(project_data[1]["image"], use_column_width=True, caption="Interactive Sales Dashboard using Knime")
+            st.image(project_data[1]["image"], width=300, caption="Interactive Sales Dashboard using Knime")
             st.subheader(project_data[1]["title"])
             st.write(project_data[1]["description"])
             if st.button("View Details", key="view_1"):
@@ -182,7 +182,7 @@ def projects():
 
         # Third project in the third column
         with cols[2]:
-            st.image(project_data[2]["image"], use_column_width=True, caption="Data Analysis for Stock Sales")
+            st.image(project_data[2]["image"], width=300, caption="Data Analysis for Stock Sales")
             st.subheader(project_data[2]["title"])
             st.write(project_data[2]["description"])
             if st.button("View Details", key="view_2"):
@@ -207,7 +207,6 @@ def projects():
 def certificates():
     st.header("Certificates")
     
-    # Example certificates
     certificates_data = [
         {
             "title": "Cloud Explorer with Microsoft Technologies Certificate",
